@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app/page/home/index.dart';
 import 'package:meal_app/page/passport/login.dart';
 import 'package:meal_app/page/passport/register.dart';
 import 'package:meal_app/screens/categories_sreen.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
           fontFamily: 'FWD'),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        '/': (context) => CategoryScreen(),
+        '/': (context) => const HomePage(),
         '/register': (context) => const Register(),
         '/login': (context) => const Login(),
         CategoryMealsScreen.routeName: (context) => CategoryMealsScreen(),
