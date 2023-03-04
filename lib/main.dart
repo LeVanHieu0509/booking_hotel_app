@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           fontFamily: 'FWD'),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        '/': (context) => TabsScreen(),
+        '/': (context) => CategoryScreen(),
         CategoryMealsScreen.routeName: (context) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
       },
