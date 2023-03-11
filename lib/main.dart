@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meal_app/page/passport/login.dart';
 import 'package:meal_app/page/passport/register.dart';
+import 'package:meal_app/page/profile/info_profile.dart';
 import 'package:meal_app/screens/categories_sreen.dart';
 import 'package:meal_app/screens/category_meals_screen.dart';
 import 'package:meal_app/screens/meal_detail_creen.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const Login(),
         CategoryMealsScreen.routeName: (context) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
+        Profile.routeName: (context) => Profile(),
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);
