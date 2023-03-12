@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:meal_app/page/profile/edit_profile.dart';
-import 'package:meal_app/screens/categories_sreen.dart';
 import 'package:meal_app/widgets/button.dart';
 import 'package:meal_app/widgets/number.dart';
-import 'package:meal_app/page/section/profile.dart';
+import 'package:meal_app/section/profile.dart';
 
 class Profile extends StatelessWidget {
   static const routeName = "/profile";
