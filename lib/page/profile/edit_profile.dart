@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:meal_app/page/profile/info_profile.dart';
-import 'package:meal_app/page/section/profile.dart';
+import 'package:meal_app/section/profile.dart';
 import 'package:meal_app/widgets/button.dart';
 import 'package:meal_app/widgets/text_field.dart';
 import 'package:path/path.dart';

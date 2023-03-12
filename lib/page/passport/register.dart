@@ -4,7 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
-
+  static final routeName = "/register";
   @override
   State<Register> createState() => _RegisterState();
 }
