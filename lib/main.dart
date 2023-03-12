@@ -7,6 +7,7 @@ import 'package:meal_app/screens/categories_sreen.dart';
 import 'package:meal_app/screens/category_meals_screen.dart';
 import 'package:meal_app/screens/meal_detail_creen.dart';
 import 'package:meal_app/screens/tabs_screen.dart';
+import 'package:meal_app/section/navigator_tab.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,14 +39,14 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
         '/': (context) => IntroductionScreen(),
-        '/register': (context) => const Register(),
-        '/login': (context) => const Login(),
+        Register.routeName: (context) => const Register(),
+        Login.routeName: (context) => const Login(),
         CategoryMealsScreen.routeName: (context) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
         Profile.routeName: (context) => Profile(),
+        BottomTabScreen.routeName: (context) => BottomTabScreen(),
       },
       onGenerateRoute: (settings) {
-        print(settings.arguments);
         return MaterialPageRoute(builder: (context) => CategoryMealsScreen());
       },
       onUnknownRoute: (settings) {
