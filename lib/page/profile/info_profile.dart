@@ -4,8 +4,13 @@ import 'package:meal_app/widgets/button.dart';
 import 'package:meal_app/widgets/number.dart';
 import 'package:meal_app/section/profile.dart';
 
-class Profile extends StatelessWidget {
+class Profile extends StatefulWidget {
   static const routeName = "/profile";
+  @override
+  _ProfileScreenState createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

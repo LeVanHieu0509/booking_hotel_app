@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:meal_app/section/navigator_tab.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -87,7 +88,9 @@ class _LoginState extends State<Login> {
               color: Colors.green,
               elevation: 7.0,
               child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).pushNamed(BottomTabScreen.routeName);
+                  },
                   child: const Center(
                       child: Text('Login',
                           style: TextStyle(
